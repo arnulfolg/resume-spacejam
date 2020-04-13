@@ -119,6 +119,35 @@ body {
   src: url(../fonts/Chewy/Chewy-Regular.ttf);
 }
 
+@font-face {
+  font-family: "Quicksand";
+  src: url(../fonts/Quicksand/static/Quicksand-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url(../fonts/Quicksand/static/Quicksand-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url(../fonts/Quicksand/static/Quicksand-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url(../fonts/Quicksand/static/Quicksand-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url(../fonts/Quicksand/static/Quicksand-SemiBold.ttf);
+  font-weight: 600;
+}
 
 .planet {
   transition: transform 0.5s;
@@ -193,6 +222,37 @@ body {
   }
 }
 
+
+.space-planet {
+  width: 100vw;
+
+  display: grid;
+  grid-template-rows: 200px max-content 200px;
+  grid-template-columns: 1fr repeat(4, minmax(min-content, 240px)) 1fr;
+  grid-template-areas:
+    ". planet-header planet-header planet-header planet-header ."
+    ". planet-content planet-content planet-content planet-content ."
+    ". planet-footer planet-footer planet-footer planet-footer .";
+  grid-gap: 16px;
+  align-items: stretch;
+  justify-items: stretch;
+}
+
+.planet-header {
+  grid-area: planet-header;
+  align-self: center;
+  justify-self: center;
+}
+
+.planet-content {
+  grid-area: planet-content;
+  padding: 24px;
+}
+
+.planet-footer {
+  grid-area: planet-footer;
+}
+
 .space-center {
   grid-area: center-galaxy;
   font-family: "Meshroom";
@@ -204,6 +264,8 @@ body {
   grid-template-areas: "logo";
   align-items: center;
   justify-items: center;
+
+  text-decoration: none;
 }
 
 .space-center img {
@@ -248,4 +310,32 @@ body {
 
 .planet-skills {
   grid-area: planet-skills;
+}
+
+.planet-titles {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.planet-titles img {
+  width: 80px;
+}
+
+.planet-titles h2 {
+  font-family: "Merienda One";
+  font-size: 24px;
+  color: white;
+  margin-left: 24px;
+}
+
+.content {
+  font-family: 'Quicksand';
+  font-weight: 300;
+  font-size: 22px;
+  color: white;
+  line-height: 1.5;
 }
