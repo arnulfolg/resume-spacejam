@@ -840,6 +840,11 @@ p {
   transform: scale(1.2, 1.2);
 }
 
+.planet:hover img {
+  transition: transform 2.5s;
+  transform: rotate(25deg);
+}
+
 .space-galaxy {
   width: 100vw;
   height: 100vh;
@@ -975,10 +980,11 @@ p {
 }
 
 .planet-titles h2 {
-  font-family: "Merienda One";
+  /* font-family: "Merienda One"; */
   /* font-size: 24px; */
   color: white;
   margin-left: 24px;
+  margin-bottom: 0;
 }
 
 .content {
@@ -1009,9 +1015,6 @@ p {
 
 .content section p {
   margin-top: 16px;
-}
-
-section.experience-block {
 }
 
 section.experience-block .company {
@@ -1049,7 +1052,4 @@ section.experience-block .company .company-name h4 {
   font-weight: 600;
   margin-bottom: 0;
   font-style: italic;
-}
-
-section.experience-block .details {
 }
