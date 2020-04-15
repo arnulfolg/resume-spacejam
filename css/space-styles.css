@@ -1053,3 +1053,12 @@ section.experience-block .company .company-name h4 {
   margin-bottom: 0;
   font-style: italic;
 }
+
+.portfolio-photos img {
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+.portfolio-photos:last-child img {
+  margin-bottom: 0;
+}
