@@ -11,6 +11,7 @@ html {
 html,
 body {
   font-size: 10px;
+  color: white;
 }
 
 body.home {
@@ -881,12 +882,12 @@ p {
   width: 100vw;
 
   display: grid;
-  grid-template-rows: 200px max-content 200px;
+  grid-template-rows: 300px max-content 200px;
   grid-template-columns: 1fr repeat(4, minmax(min-content, 240px)) 1fr;
   grid-template-areas:
     "planet-header planet-header planet-header planet-header planet-header planet-header"
     ". planet-content planet-content planet-content planet-content ."
-    ". planet-footer planet-footer planet-footer planet-footer .";
+    "planet-footer planet-footer planet-footer planet-footer planet-footer planet-footer";
   grid-gap: 16px;
   align-items: stretch;
   justify-items: stretch;
@@ -894,17 +895,87 @@ p {
 
 .planet-header {
   grid-area: planet-header;
-  align-self: center;
-  justify-self: center;
+  align-self: stretch;
+  justify-self: stretch;
+  background-color: #092339;
+
+  display: grid;
+  grid-template-rows: 100px 200px;
+  grid-template-columns: 1fr repeat(4, minmax(min-content, 240px)) 1fr;
+  grid-column-gap: 16px;
+  align-items: stretch;
+  justify-items: stretch;
+}
+
+.planet-header nav {
+  grid-column: 2/6;
+}
+
+.planet-header nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0;
+}
+
+.planet-header nav p {
+  color: white;
+  text-decoration: none;
+  margin: 0;
+}
+
+.planet-header nav a.nav-home {
+  color: white;
+  text-decoration: none;
+  display: flex;
+}
+
+.nav-page-list li {
+  margin-left: 20px;
+  text-align: center;
+}
+
+.planet-header nav .nav-home img {
+  width: 60px;
+}
+
+.planet-header nav .nav-home h1 {
+  font-size: 4rem;
+  margin: 0;
+  margin-left: 15px;
+}
+
+.planet-header nav .nav-page img {
+  width: 40px;
+}
+
+.planet-header nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: center;
+}
+
+.planet-header section {
+  grid-column: 2/6;
 }
 
 .planet-content {
   grid-area: planet-content;
   padding: 24px;
+  margin-bottom: 12rem;
 }
 
 .planet-footer {
   grid-area: planet-footer;
+  padding: 40px;
+  text-align: center;
+  background-color: #1e1e1e;
+}
+
+.planet-footer .greetings p {
+  margin: 0;
 }
 
 .space-center {
@@ -1063,14 +1134,17 @@ section.experience-block .company .company-name h4 {
   margin-bottom: 0;
 }
 
-.skill-sets {
+.skill-sets,
+.hobby-sets {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 16px;
 }
 
 .skill-sets .left,
-.skill-sets .right {
+.skill-sets .right,
+.hobby-sets .left,
+.hobby-sets .right {
   grid-column: 1/3;
   display: grid;
   grid-template-columns: subgrid;
@@ -1079,7 +1153,8 @@ section.experience-block .company .company-name h4 {
   grid-auto-flow: row;
 }
 
-.skill-sets .right {
+.skill-sets .right,
+.hobby-sets .right {
   grid-column: 3/5;
 }
 
@@ -1104,7 +1179,7 @@ section.experience-block .company .company-name h4 {
   width: 50%;
   border-radius: 6px;
   content: "";
-  background-color: orangered;
+  /* background-color: orangered; */
 }
 
 .range-75:after {
@@ -1113,7 +1188,7 @@ section.experience-block .company .company-name h4 {
   width: 75%;
   border-radius: 6px;
   content: "";
-  background-color: yellowgreen;
+  /* background-color: yellowgreen; */
 }
 
 .range-100:after {
@@ -1122,5 +1197,25 @@ section.experience-block .company .company-name h4 {
   width: 100%;
   border-radius: 6px;
   content: "";
-  background-color: lightseagreen;
+  /* background-color: lightseagreen; */
+}
+
+.range-ux:after {
+  background-color: #d0021b;
+}
+
+.range-ui:after {
+  background-color: #004b8d;
+}
+
+.range-fe:after {
+  background-color: #fdbd2c;
+}
+
+.hobby-img {
+  justify-self: end;
+}
+
+.hobby-img img {
+  width: 50px;
 }
