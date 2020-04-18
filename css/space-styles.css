@@ -907,6 +907,30 @@ p {
   justify-items: stretch;
 }
 
+.planet-header-about {
+  background-color: #0e0e10;
+}
+
+.planet-header-education {
+  background-color: #0e0e10;
+}
+
+.planet-header-skills {
+  background-color: #0e0e10;
+}
+
+.planet-header-portfolio {
+  background-color: #0e0e10;
+}
+
+.planet-header-experience {
+  background-color: #0e0e10;
+}
+
+.planet-header-hobbies {
+  background-color: #0e0e10;
+}
+
 .planet-header nav {
   grid-column: 2/6;
 }
@@ -971,7 +995,7 @@ p {
   grid-area: planet-footer;
   padding: 40px;
   text-align: center;
-  background-color: #1e1e1e;
+  background-color: #0e0e10;
 }
 
 .planet-footer .greetings p {
