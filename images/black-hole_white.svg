@@ -30,31 +30,31 @@
    guidetolerance="10"
    inkscape:pageopacity="0"
    inkscape:pageshadow="2"
-   inkscape:window-width="1085"
-   inkscape:window-height="637"
+   inkscape:window-width="958"
+   inkscape:window-height="1008"
    id="namedview53"
    showgrid="false"
-   inkscape:zoom="0.4609375"
-   inkscape:cx="256"
-   inkscape:cy="256"
-   inkscape:window-x="0"
+   inkscape:zoom="1.0049115"
+   inkscape:cx="275.52542"
+   inkscape:cy="240.81356"
+   inkscape:window-x="953"
    inkscape:window-y="0"
    inkscape:window-maximized="0"
    inkscape:current-layer="Layer_1" />
 <path
-   style="fill:#484686;"
+   style="fill:#808080"
    d="M256,68.817v374.366c103.378,0,187.183-83.805,187.183-187.183S359.378,68.817,256,68.817z"
    id="path2" />
 <path
-   style="fill:#6858AD;"
+   style="fill:#666666"
    d="M410.151,256c0-103.378-69.015-187.183-154.151-187.183C152.622,68.817,68.817,152.622,68.817,256  S152.622,443.183,256,443.183C341.135,443.183,410.151,359.378,410.151,256z"
    id="path4" />
 <path
-   style="fill:#092339;"
+   style="fill:#333333"
    d="M256,134.882v242.237c66.891,0,121.118-54.227,121.118-121.118S322.891,134.882,256,134.882z"
    id="path6" />
 <path
-   style="fill:#293560;"
+   style="fill:#1a1a1a"
    d="M344.086,256c0-66.891-39.437-121.118-88.086-121.118c-66.891,0-121.118,54.227-121.118,121.118  S189.109,377.118,256,377.118C304.649,377.118,344.086,322.891,344.086,256z"
    id="path8" />
 <path
@@ -67,30 +67,10 @@
    inkscape:connector-curvature="0"
    sodipodi:nodetypes="ssscccsssssccccs"
    style="fill:#ffffff" />
-<circle
-   cx="462.452"
-   cy="462.452"
-   r="8.258"
-   id="circle14"
-   style="fill:#ffffff" />
-<circle
-   cx="495.484"
-   cy="82.581"
-   r="8.258"
-   id="circle16"
-   style="fill:#ffffff" />
-<circle
-   cx="462.452"
-   cy="49.548"
-   r="8.258"
-   id="circle18"
-   style="fill:#ffffff" />
-<circle
-   cx="49.548"
-   cy="49.548"
-   r="8.258"
-   id="circle20"
-   style="fill:#ffffff" />
+
+
+
+
 <g
    id="g22">
 </g>
