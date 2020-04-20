@@ -192,7 +192,7 @@ body.pages {
 
 @keyframes animation_stars_close {
 	from {
-		transform: translateY(0px);
+		transform: translateY(0);
 	}
 
 	to {
@@ -202,7 +202,7 @@ body.pages {
 
 @keyframes animation_stars_inside {
 	from {
-		transform: translateY(0px);
+		transform: translateY(0);
 	}
 
 	to {
