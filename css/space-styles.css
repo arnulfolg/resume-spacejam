@@ -124,7 +124,8 @@ h6 {
 	letter-spacing: 0;
 }
 
-p {
+p,
+a {
 	margin-bottom: 3rem;
 	font-family: "Quicksand";
 	font-size: 2rem;
@@ -132,6 +133,14 @@ p {
 	font-weight: 400;
 	font-style: normal;
 	letter-spacing: 0;
+}
+a:visited,
+a:active {
+	color: white;
+}
+a:hover,
+a:focus {
+	color: goldenrod;
 }
 
 @media all and (max-width: 900px) {
@@ -195,7 +204,8 @@ p {
 		letter-spacing: 0;
 	}
 
-	p {
+	p,
+	a {
 		margin-bottom: 3rem;
 		font-family: "Quicksand";
 		font-size: 1.6em;
@@ -294,7 +304,7 @@ p {
 
 .space-planet {
 	display: grid;
-	grid-template-rows: 300px max-content 200px;
+	grid-template-rows: 300px max-content auto;
 	grid-template-columns: 1fr repeat(4, minmax(min-content, 240px)) 1fr;
 	grid-template-areas:
 		"planet-header planet-header planet-header planet-header planet-header planet-header"
@@ -671,4 +681,116 @@ section.experience-block .company .company-name h4 {
 
 .hobby-img img {
 	width: 50px;
+}
+
+.icon {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	mask-size: cover;
+	mask-repeat: no-repeat;
+	background-color: white;
+}
+.social-media {
+	margin-bottom: 3rem;
+}
+.social-media p {
+	margin-bottom: 1rem;
+}
+
+.social-media .social-media__links {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+.social-media .social-media__links li {
+	margin: 0 1rem;
+}
+
+.icon-github {
+	mask-image: url(../images/contact/github.svg);
+}
+
+.icon-github:hover {
+	background-color: #0c2635;
+}
+
+.icon-linkedin {
+	mask-image: url(../images/contact/linkedin.svg);
+}
+.icon-linkedin:hover {
+	background-color: #0077b5;
+}
+
+.icon-instagram {
+	mask-image: url(../images/contact/instagram.svg);
+}
+.icon-instagram:hover {
+	background: radial-gradient(
+			circle farthest-corner at 35% 90%,
+			#fec564,
+			transparent 50%
+		),
+		radial-gradient(
+			circle farthest-corner at 0 140%,
+			#fec564,
+			transparent 50%
+		),
+		radial-gradient(
+			ellipse farthest-corner at 0 -25%,
+			#5258cf,
+			transparent 50%
+		),
+		radial-gradient(
+			ellipse farthest-corner at 20% -50%,
+			#5258cf,
+			transparent 50%
+		),
+		radial-gradient(
+			ellipse farthest-corner at 100% 0,
+			#893dc2,
+			transparent 50%
+		),
+		radial-gradient(
+			ellipse farthest-corner at 60% -20%,
+			#893dc2,
+			transparent 50%
+		),
+		radial-gradient(
+			ellipse farthest-corner at 100% 100%,
+			#d9317a,
+			transparent
+		),
+		linear-gradient(
+			#6559ca,
+			#bc318f 30%,
+			#e33f5f 50%,
+			#f77638 70%,
+			#fec66d 100%
+		);
+}
+
+.icon-email {
+	mask-image: url(../images/contact/email.svg);
+}
+.icon-email:hover {
+	background-color: #c23929;
+}
+
+.icon-flickr {
+	mask-image: url(../images/contact/flickr.svg);
+}
+.icon-flickr:hover {
+	background: linear-gradient(to right, #0063dd 50%, #ff0085 50%);
+}
+
+.icon-behance {
+	mask-image: url(../images/contact/behance.svg);
+}
+.icon-behance:hover {
+	background-color: #0057ff;
 }
