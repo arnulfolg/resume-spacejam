@@ -284,9 +284,11 @@ a:focus {
 	grid-template-rows: 1fr repeat(3, 200px) 1fr;
 	grid-template-columns: 1fr repeat(4, minmax(min-content, 240px)) 1fr;
 	grid-template-areas:
-		". . . . . ." ". . planet-about planet-education . ."
-		". planet-hobbies center-galaxy center-galaxy planet-skills ." ". . planet-experience planet-portfolio . ."
-		". . . . . .";
+		". . . . . ."
+		". . planet-about planet-education . ."
+		". planet-hobbies center-galaxy center-galaxy planet-skills ."
+		". . planet-experience planet-portfolio . ."
+		"planet-footer planet-footer planet-footer planet-footer planet-footer planet-footer";
 	grid-gap: 16px;
 	align-items: center;
 	justify-items: center;
@@ -297,8 +299,12 @@ a:focus {
 		grid-template-rows: 1fr repeat(4, 200px) 1fr;
 		grid-template-columns: 1fr repeat(2, minmax(min-content, 240px)) 1fr;
 		grid-template-areas:
-			". . . ." ". center-galaxy center-galaxy ." ". planet-about planet-education ."
-			". planet-experience planet-portfolio ." ". planet-hobbies planet-skills ." ". . . .";
+			". . . ."
+			". center-galaxy center-galaxy ."
+			". planet-about planet-education ."
+			". planet-experience planet-portfolio ."
+			". planet-hobbies planet-skills ."
+			"planet-footer planet-footer planet-footer planet-footer";
 	}
 }
 
@@ -420,6 +426,7 @@ a:focus {
 	padding: 40px;
 	text-align: center;
 	background-color: #0e0e10;
+	justify-self: stretch;
 }
 
 .planet-footer .greetings p {
