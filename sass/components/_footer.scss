@@ -1,0 +1,61 @@
+.footer {
+	.footer__greetings p {
+		margin: 0;
+	}
+
+	.footer__socialmedia {
+		margin-bottom: 3rem;
+
+		.footer__socialmedia__links {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: center;
+			align-content: center;
+			align-items: center;
+
+			li {
+				margin: 0 1rem;
+			}
+		}
+		.icon {
+			display: inline-block;
+			width: 24px;
+			height: 24px;
+			mask-size: cover;
+			mask-repeat: no-repeat;
+			background-color: var(--color-white);
+
+			&:hover {
+				background-color: var(--color-links-hover);
+			}
+
+			&.icon--github {
+				mask-image: url(../images/contact/github.svg);
+			}
+
+			&.icon--linkedin {
+				mask-image: url(../images/contact/linkedin.svg);
+			}
+
+			&.icon--instagram {
+				mask-image: url(../images/contact/instagram.svg);
+			}
+
+			&.icon--email {
+				mask-image: url(../images/contact/email.svg);
+			}
+
+			&.icon--flickr {
+				mask-image: url(../images/contact/flickr.svg);
+			}
+
+			&.icon--behance {
+				mask-image: url(../images/contact/behance.svg);
+			}
+		}
+		p {
+			margin-bottom: 1rem;
+		}
+	}
+}

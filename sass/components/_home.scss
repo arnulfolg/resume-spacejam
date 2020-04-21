@@ -1,0 +1,45 @@
+.galaxy__planet {
+	transition: transform 0.5s;
+	transform-origin: center center;
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+
+.galaxy__planet img {
+	width: 80px;
+
+	order: 0;
+	flex: 0 1 auto;
+	align-self: auto;
+}
+
+.galaxy__planet span {
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+
+	font-family: "Merienda One";
+	color: white;
+	font-size: 18px;
+
+	order: 0;
+	flex: 0 1 auto;
+	align-self: auto;
+
+	margin-top: 10px;
+}
+
+.galaxy__planet:hover {
+	transform: scale(1.2, 1.2);
+}
+
+.galaxy__planet:hover img {
+	transition: transform 2.5s;
+	transform: rotate(25deg);
+}
