@@ -1,0 +1,35 @@
+extends mixins/template
+
+block html_title 
+	| About
+
+block header_title
+	| About
+
+block content
+	article.planet__content
+		section
+		p
+			| Visual Designer with a Front End and Engineer
+			| background. I moved from the coding side to the design
+			| side to create amazing experiences to the users. An
+			| incredible passion to always learn has helped me shaped
+			| a broader profile that moves from UX design, Information
+			| Arquitecture, UI Design and Front End. Also has an
+			| incredible passion for photography, reading, and taking
+			| longs walks or running.
+		section
+			h3 Languages
+		section.experience-block
+			.company
+				img.company-img(src='images/about/english-language.svg' alt='')
+				.company-name
+					h3 English
+					h4 C1 - Advanced
+		section.experience-block
+			.company
+				img.company-img(src='images/about/spanish-language.svg' alt='')
+				.company-name
+					h3 Spanish
+					h4 C2 - Native
+	

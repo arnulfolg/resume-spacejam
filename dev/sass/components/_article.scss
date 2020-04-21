@@ -1,22 +1,24 @@
 .content {
 	// font-family: "Quicksand";
 	// color: white;
-	line-height: 1.5;
+	// line-height: 1.5;
 }
 
-.content section {
-	margin-top: 128px;
+.planet__content {
+	section {
+		margin-top: 128px;
+	}
+
+	section:first-child {
+		margin-top: 64px;
+	}
+
+	section p {
+		margin-top: 16px;
+	}
 }
 
-.content section:first-child {
-	margin-top: 64px;
-}
-
-.content section p {
-	margin-top: 16px;
-}
-
-section.experience-block .company {
+.experience-block .company {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -25,14 +27,14 @@ section.experience-block .company {
 	align-items: center;
 }
 
-section.experience-block .company .company-img {
+.experience-block .company .company-img {
 	order: 0;
 	flex: 0 1 150px;
 	align-self: auto;
 	height: 150px;
 }
 
-section.experience-block .company .company-name {
+.experience-block .company .company-name {
 	order: 0;
 	flex: 1 1 auto;
 	align-self: auto;
@@ -40,13 +42,13 @@ section.experience-block .company .company-name {
 	margin-left: 24px;
 }
 
-section.experience-block .company .company-name h3 {
+.experience-block .company .company-name h3 {
 	font-family: "Quicksand";
 	font-weight: 700;
 	margin-bottom: 0;
 }
 
-section.experience-block .company .company-name h4 {
+.experience-block .company .company-name h4 {
 	font-family: "Quicksand";
 	font-weight: 600;
 	margin-bottom: 0;
@@ -107,7 +109,6 @@ section.experience-block .company .company-name h4 {
 	width: 50%;
 	border-radius: 6px;
 	content: "";
-	/* background-color: orangered; */
 }
 
 .range-75:after {
@@ -116,7 +117,6 @@ section.experience-block .company .company-name h4 {
 	width: 75%;
 	border-radius: 6px;
 	content: "";
-	/* background-color: yellowgreen; */
 }
 
 .range-100:after {
@@ -125,7 +125,6 @@ section.experience-block .company .company-name h4 {
 	width: 100%;
 	border-radius: 6px;
 	content: "";
-	/* background-color: lightseagreen; */
 }
 
 .range-ux:after {
