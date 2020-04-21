@@ -71,7 +71,7 @@ h1 {
 	line-height: 9rem;
 	font-weight: 400;
 	font-style: normal;
-	letter-spacing: 0em;
+	letter-spacing: 0;
 }
 
 h2 {
@@ -81,7 +81,7 @@ h2 {
 	line-height: 6rem;
 	font-weight: 400;
 	font-style: normal;
-	letter-spacing: 0em;
+	letter-spacing: 0;
 }
 
 h3 {
@@ -91,7 +91,7 @@ h3 {
 	line-height: 6rem;
 	font-weight: 400;
 	font-style: normal;
-	letter-spacing: 0em;
+	letter-spacing: 0;
 }
 
 h4 {
@@ -101,7 +101,7 @@ h4 {
 	line-height: 6rem;
 	font-weight: 400;
 	font-style: normal;
-	letter-spacing: 0em;
+	letter-spacing: 0;
 }
 
 h5 {
@@ -111,7 +111,7 @@ h5 {
 	line-height: 3rem;
 	font-weight: 400;
 	font-style: normal;
-	letter-spacing: 0em;
+	letter-spacing: 0;
 }
 
 h6 {
@@ -121,17 +121,26 @@ h6 {
 	line-height: 3rem;
 	font-weight: 400;
 	font-style: normal;
-	letter-spacing: 0em;
+	letter-spacing: 0;
 }
 
-p {
+p,
+a {
 	margin-bottom: 3rem;
 	font-family: "Quicksand";
 	font-size: 2rem;
 	line-height: 3rem;
 	font-weight: 400;
 	font-style: normal;
-	letter-spacing: 0em;
+	letter-spacing: 0;
+}
+a:visited,
+a:active {
+	color: white;
+}
+a:hover,
+a:focus {
+	color: goldenrod;
 }
 
 @media all and (max-width: 900px) {
@@ -142,7 +151,7 @@ p {
 		line-height: 9rem;
 		font-weight: 600;
 		font-style: normal;
-		letter-spacing: 0em;
+		letter-spacing: 0;
 	}
 
 	h2 {
@@ -152,7 +161,7 @@ p {
 		line-height: 6rem;
 		font-weight: 600;
 		font-style: normal;
-		letter-spacing: 0em;
+		letter-spacing: 0;
 	}
 
 	h3 {
@@ -162,7 +171,7 @@ p {
 		line-height: 6rem;
 		font-weight: 600;
 		font-style: normal;
-		letter-spacing: 0em;
+		letter-spacing: 0;
 	}
 
 	h4 {
@@ -172,7 +181,7 @@ p {
 		line-height: 6rem;
 		font-weight: 600;
 		font-style: normal;
-		letter-spacing: 0em;
+		letter-spacing: 0;
 	}
 
 	h5 {
@@ -182,7 +191,7 @@ p {
 		line-height: 3rem;
 		font-weight: 600;
 		font-style: normal;
-		letter-spacing: 0em;
+		letter-spacing: 0;
 	}
 
 	h6 {
@@ -192,17 +201,18 @@ p {
 		line-height: 3rem;
 		font-weight: 600;
 		font-style: normal;
-		letter-spacing: 0em;
+		letter-spacing: 0;
 	}
 
-	p {
+	p,
+	a {
 		margin-bottom: 3rem;
 		font-family: "Quicksand";
 		font-size: 1.6em;
 		line-height: 3rem;
 		font-weight: 400;
 		font-style: normal;
-		letter-spacing: 0em;
+		letter-spacing: 0;
 	}
 }
 
@@ -273,9 +283,12 @@ p {
 	display: grid;
 	grid-template-rows: 1fr repeat(3, 200px) 1fr;
 	grid-template-columns: 1fr repeat(4, minmax(min-content, 240px)) 1fr;
-	grid-template-areas: ". . . . . ." ". . planet-about planet-education . ."
-		". planet-hobbies center-galaxy center-galaxy planet-skills ." ". . planet-experience planet-portfolio . ."
-		". . . . . .";
+	grid-template-areas:
+		". . . . . ."
+		". . planet-about planet-education . ."
+		". planet-hobbies center-galaxy center-galaxy planet-skills ."
+		". . planet-experience planet-portfolio . ."
+		"planet-footer planet-footer planet-footer planet-footer planet-footer planet-footer";
 	grid-gap: 16px;
 	align-items: center;
 	justify-items: center;
@@ -285,16 +298,22 @@ p {
 	.space-galaxy {
 		grid-template-rows: 1fr repeat(4, 200px) 1fr;
 		grid-template-columns: 1fr repeat(2, minmax(min-content, 240px)) 1fr;
-		grid-template-areas: ". . . ." ". center-galaxy center-galaxy ." ". planet-about planet-education ."
-			". planet-experience planet-portfolio ." ". planet-hobbies planet-skills ." ". . . .";
+		grid-template-areas:
+			". . . ."
+			". center-galaxy center-galaxy ."
+			". planet-about planet-education ."
+			". planet-experience planet-portfolio ."
+			". planet-hobbies planet-skills ."
+			"planet-footer planet-footer planet-footer planet-footer";
 	}
 }
 
 .space-planet {
 	display: grid;
-	grid-template-rows: 300px max-content 200px;
+	grid-template-rows: 300px max-content auto;
 	grid-template-columns: 1fr repeat(4, minmax(min-content, 240px)) 1fr;
-	grid-template-areas: "planet-header planet-header planet-header planet-header planet-header planet-header"
+	grid-template-areas:
+		"planet-header planet-header planet-header planet-header planet-header planet-header"
 		". planet-content planet-content planet-content planet-content ."
 		"planet-footer planet-footer planet-footer planet-footer planet-footer planet-footer";
 	grid-gap: 16px;
@@ -407,6 +426,7 @@ p {
 	padding: 40px;
 	text-align: center;
 	background-color: #0e0e10;
+	justify-self: stretch;
 }
 
 .planet-footer .greetings p {
@@ -668,4 +688,75 @@ section.experience-block .company .company-name h4 {
 
 .hobby-img img {
 	width: 50px;
+}
+
+.icon {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	mask-size: cover;
+	mask-repeat: no-repeat;
+	background-color: white;
+}
+.social-media {
+	margin-bottom: 3rem;
+}
+.social-media p {
+	margin-bottom: 1rem;
+}
+
+.social-media .social-media__links {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+.social-media .social-media__links li {
+	margin: 0 1rem;
+}
+
+.icon-github {
+	mask-image: url(../images/contact/github.svg);
+}
+
+.icon-github:hover {
+	background-color: goldenrod;
+}
+
+.icon-linkedin {
+	mask-image: url(../images/contact/linkedin.svg);
+}
+.icon-linkedin:hover {
+	background-color: goldenrod;
+}
+
+.icon-instagram {
+	mask-image: url(../images/contact/instagram.svg);
+}
+.icon-instagram:hover {
+	background-color: goldenrod;
+}
+
+.icon-email {
+	mask-image: url(../images/contact/email.svg);
+}
+.icon-email:hover {
+	background-color: goldenrod;
+}
+
+.icon-flickr {
+	mask-image: url(../images/contact/flickr.svg);
+}
+.icon-flickr:hover {
+	background-color: goldenrod;
+}
+
+.icon-behance {
+	mask-image: url(../images/contact/behance.svg);
+}
+.icon-behance:hover {
+	background-color: goldenrod;
 }
