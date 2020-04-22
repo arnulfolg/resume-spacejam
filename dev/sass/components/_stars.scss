@@ -1,16 +1,16 @@
-body.home {
+body.stars__galaxy {
 	background: radial-gradient(ellipse at bottom, #121d2b, #0e0e10 80%);
 }
 
-body.pages {
+body.stars__planet {
 	background: radial-gradient(ellipse at bottom, #121d2b 0%, #0e0e10 100%);
 }
 
-.space-background {
+.stars__background {
 	position: relative;
 }
 
-.space-background__stars1:after {
+.stars__background--stars--1:after {
 	content: " ";
 	position: absolute;
 	z-index: -1;
@@ -47,10 +47,10 @@ body.pages {
 		124px 590px #fff, 98px 1825px #fff, 593px 1384px #fff,
 		1599px 1228px #fff, 624px 106px #fff, 268px 1076px #fff,
 		871px 530px #fff, 396px 606px #fff, 460px 1760px #fff;
-	animation: animation_stars_far 667.4s linear infinite;
+	animation: animation__stars--1 667.4s linear infinite;
 }
 
-.space-background__stars2:before {
+.stars__background--stars--2:before {
 	content: " ";
 	position: absolute;
 	z-index: -1;
@@ -117,10 +117,10 @@ body.pages {
 		1153px 237px #fff, 1400px 1393px #fff, 1328px 330px #fff,
 		242px 1109px #fff, 1342px 666px #fff, 1549px 232px #fff,
 		1443px 296px #fff, 1521px 860px #fff;
-	animation: animation_stars_close 314.16s linear infinite;
+	animation: animation__stars--2 314.16s linear infinite;
 }
 
-.space-background__stars3:before {
+.stars__background--stars--3:before {
 	content: " ";
 	position: absolute;
 	z-index: -1;
@@ -177,10 +177,10 @@ body.pages {
 		363px 1013px #fff, 809px 835px #fff, 858px 1988px #fff, 52px 1118px #fff,
 		1128px 1483px #fff, 1213px 516px #fff, 301px 1785px #fff,
 		1232px 1791px #fff, 1547px 896px #fff;
-	animation: animation_stars_inside 981.99s linear infinite;
+	animation: animation__stars--3 981.99s linear infinite;
 }
 
-@keyframes animation_stars_far {
+@keyframes animation__stars--1 {
 	from {
 		transform: translateY(-1000px);
 	}
@@ -190,7 +190,7 @@ body.pages {
 	}
 }
 
-@keyframes animation_stars_close {
+@keyframes animation__stars--2 {
 	from {
 		transform: translateY(0);
 	}
@@ -200,7 +200,7 @@ body.pages {
 	}
 }
 
-@keyframes animation_stars_inside {
+@keyframes animation__stars--3 {
 	from {
 		transform: translateY(0);
 	}
