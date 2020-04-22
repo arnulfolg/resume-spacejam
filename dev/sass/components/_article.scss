@@ -1,14 +1,14 @@
 .planet__content {
 	section {
-		margin-top: 128px;
+		margin-top: 6.4rem;
 	}
 
 	section:first-child {
-		margin-top: 64px;
+		margin-top: 3.2rem;
 	}
 
 	section p {
-		margin-top: 16px;
+		margin-top: 1.6rem;
 	}
 }
 
@@ -22,9 +22,16 @@
 
 	.featured__block--image {
 		order: 0;
-		flex: 0 1 150px;
+		flex: 0 1 15rem;
 		align-self: auto;
-		height: 150px;
+		height: 15rem;
+
+		@media all and (max-width: 700px) {
+			order: 0;
+			flex: 0 1 5rem;
+			align-self: auto;
+			height: 5rem;
+		}
 	}
 
 	.featured__block--text {
@@ -32,19 +39,32 @@
 		flex: 1 1 auto;
 		align-self: auto;
 
-		margin-left: 24px;
+		margin-left: 2.4rem;
 
-		h3 {
+		p:nth-child(1) {
 			font-family: "Quicksand";
+			font-size: 3.2rem;
 			font-weight: 700;
-			margin-bottom: 0;
+			margin: 0;
 		}
 
-		h4 {
+		p:nth-child(2) {
 			font-family: "Quicksand";
-			font-weight: 600;
+			font-size: 2.2rem;
+			font-weight: 400;
+			margin-top: 1rem;
 			margin-bottom: 0;
 			font-style: italic;
+		}
+
+		@media all and (max-width: 700px) {
+			p:nth-child(1) {
+				font-size: 3rem;
+			}
+
+			p:nth-child(2) {
+				font-size: 2.2rem;
+			}
 		}
 	}
 }
