@@ -563,7 +563,7 @@ html {
   .featured__block .featured__block--image {
     order: 0;
     flex: 0 1 5rem;
-    align-self: auto;
+    align-self: start;
     height: 5rem;
   }
 }
