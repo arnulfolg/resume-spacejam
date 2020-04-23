@@ -1,0 +1,104 @@
+.galaxy {
+	height: 100vh;
+
+	display: grid;
+	grid-template-rows: 1fr repeat(3, 200px) 1fr;
+	grid-template-columns: 1fr repeat(4, minmax(min-content, 240px)) 1fr;
+	grid-template-areas:
+		". . . . . ."
+		". . galaxy__planet--about galaxy__planet--education . ."
+		". galaxy__planet--hobbies galaxy__blackhole galaxy__blackhole galaxy__planet--skills ."
+		". . galaxy__planet--experience galaxy__planet--portfolio . ."
+		"galaxy__footer galaxy__footer galaxy__footer galaxy__footer galaxy__footer galaxy__footer";
+	grid-gap: 16px;
+	align-items: center;
+	justify-items: center;
+}
+
+@media all and (max-width: 900px) {
+	.galaxy {
+		grid-template-rows: 1fr repeat(4, 200px) 1fr;
+		grid-template-columns: 1fr repeat(2, minmax(min-content, 240px)) 1fr;
+		grid-template-areas:
+			". . . ."
+			". galaxy__blackhole galaxy__blackhole ."
+			". galaxy__planet--about galaxy__planet--education ."
+			". galaxy__planet--experience galaxy__planet--portfolio ."
+			". galaxy__planet--hobbies galaxy__planet--skills ."
+			"galaxy__footer galaxy__footer galaxy__footer galaxy__footer";
+	}
+}
+
+.galaxy__blackhole {
+	grid-area: galaxy__blackhole;
+
+	display: inline-grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr;
+	grid-template-areas: "galaxy__blackhole--logo";
+	align-items: center;
+	justify-items: center;
+
+	text-decoration: none;
+}
+
+.galaxy__blackhole img {
+	width: 13.5rem;
+	grid-area: galaxy__blackhole--logo;
+}
+
+.galaxy__blackhole h1 {
+	font-size: 6.5rem;
+	margin: 0;
+	grid-area: galaxy__blackhole--logo;
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-content: stretch;
+	align-items: center;
+}
+
+.galaxy__blackhole h1 span:nth-child(1) {
+	order: 0;
+	flex: 0 1 auto;
+	align-self: stretch;
+}
+
+.galaxy__blackhole h1 span:nth-child(2) {
+	order: 0;
+	flex: 0 1 auto;
+	align-self: flex-end;
+}
+
+.galaxy__planet--about {
+	grid-area: galaxy__planet--about;
+}
+
+.galaxy__planet--education {
+	grid-area: galaxy__planet--education;
+}
+
+.galaxy__planet--experience {
+	grid-area: galaxy__planet--experience;
+}
+
+.galaxy__planet--portfolio {
+	grid-area: galaxy__planet--portfolio;
+}
+
+.galaxy__planet--hobbies {
+	grid-area: galaxy__planet--hobbies;
+}
+
+.galaxy__planet--skills {
+	grid-area: galaxy__planet--skills;
+}
+
+.galaxy__footer {
+	grid-area: galaxy__footer;
+	padding: 40px;
+	text-align: center;
+	justify-self: stretch;
+}

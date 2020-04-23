@@ -1,0 +1,52 @@
+extends mixins/template
+
+block html_title 
+	| Hobbies
+
+block header_title
+	| Hobbies
+
+block content
+	article.planet__content
+		section.featured__block
+			img.featured__block--image(src='images/hobbies/idea.svg' alt='')
+			.featured__block--text
+				p Learning new things
+				p Accessibility Enthusiast
+		section
+			h3 Sports
+		section.skill__block.skill__block--hobbies
+			.skill__column--left
+				img(src='images/hobbies/running.svg' alt='').skill__block--image.skill__block--rightalign
+				.skill__block--name
+					p Running
+				img(src='images/hobbies/gym.svg' alt='').skill__block--image.skill__block--rightalign
+				.skill__block--name
+					p Gym Training
+				img(src='images/hobbies/hiking.svg' alt='').skill__block--image.skill__block--rightalign
+				.skill__block--name
+					p Hiking
+			.skill__column--right
+				img(src='images/hobbies/cycling.svg' alt='').skill__block--image.skill__block--rightalign
+				.skill__block--name
+					p Cycling
+				img(src='images/hobbies/swimming.svg' alt='').skill__block--image.skill__block--rightalign
+				.skill__block--name
+					p Swimming
+				img(src='images/hobbies/ping-pong.svg' alt='').skill__block--image.skill__block--rightalign
+				.skill__block--name
+					p Ping Pong
+		section
+			h3 Other Activities
+		section.skill__block.skill__block--hobbies
+			.skill__column--left
+				img(src='images/hobbies/photo-camera.svg' alt='').skill__block--image.skill__block--rightalign
+				.skill__block--name
+					p Photography
+				img(src='images/hobbies/gameboy.svg' alt='').skill__block--image.skill__block--rightalign
+				.skill__block--name
+					p Videogames
+			.skill__column--right
+				img(src='images/hobbies/open-book.svg' alt='').skill__block--image.skill__block--rightalign
+				.skill__block--name
+					p Reading

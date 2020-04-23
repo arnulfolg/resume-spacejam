@@ -1,0 +1,12 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+@import "layouts/galaxy_layout";
+@import "layouts/planet_layout";
