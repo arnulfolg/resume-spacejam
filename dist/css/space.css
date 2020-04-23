@@ -124,16 +124,7 @@ a {
   font-weight: 400;
   font-style: normal;
   letter-spacing: 0;
-}
-
-a:visited,
-a:active {
-  color: var(--color-link);
-}
-
-a:hover,
-a:focus {
-  color: var(--color-links-hover);
+  color: var(--color-white);
 }
 
 @media all and (max-width: 900px) {
@@ -203,6 +194,16 @@ a:focus {
   }
 }
 
+a:visited,
+a:active {
+  color: var(--color-link);
+}
+
+a:hover,
+a:focus {
+  color: var(--color-links-hover);
+}
+
 html {
   box-sizing: border-box;
 }
@@ -244,18 +245,14 @@ html {
 }
 
 .galaxy__blackhole img {
-  width: 135px;
+  width: 13.5rem;
   grid-area: galaxy__blackhole--logo;
 }
 
 .galaxy__blackhole h1 {
-  font-size: 65px;
+  font-size: 6.5rem;
   margin: 0;
   grid-area: galaxy__blackhole--logo;
-  background: -webkit-linear-gradient(white, #38495a);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -382,7 +379,7 @@ html {
   text-align: center;
   display: inline-block;
   font-family: "Merienda One";
-  color: white;
+  color: var(--color-white);
   font-size: 18px;
   order: 0;
   flex: 0 1 auto;
@@ -623,7 +620,6 @@ html {
   .skill__block .skill__column--left,
   .skill__block .skill__column--right {
     grid-template-columns: 1fr;
-    grid-gap: 1rem;
   }
 }
 
@@ -757,7 +753,9 @@ html {
   display: inline-block;
   width: 24px;
   height: 24px;
+  -webkit-mask-size: cover;
   mask-size: cover;
+  -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   background-color: var(--color-white);
 }
@@ -767,26 +765,32 @@ html {
 }
 
 .footer .footer__socialmedia .icon.icon--github {
+  -webkit-mask-image: url(../images/contact/github.svg);
   mask-image: url(../images/contact/github.svg);
 }
 
 .footer .footer__socialmedia .icon.icon--linkedin {
+  -webkit-mask-image: url(../images/contact/linkedin.svg);
   mask-image: url(../images/contact/linkedin.svg);
 }
 
 .footer .footer__socialmedia .icon.icon--instagram {
+  -webkit-mask-image: url(../images/contact/instagram.svg);
   mask-image: url(../images/contact/instagram.svg);
 }
 
 .footer .footer__socialmedia .icon.icon--email {
+  -webkit-mask-image: url(../images/contact/email.svg);
   mask-image: url(../images/contact/email.svg);
 }
 
 .footer .footer__socialmedia .icon.icon--flickr {
+  -webkit-mask-image: url(../images/contact/flickr.svg);
   mask-image: url(../images/contact/flickr.svg);
 }
 
 .footer .footer__socialmedia .icon.icon--behance {
+  -webkit-mask-image: url(../images/contact/behance.svg);
   mask-image: url(../images/contact/behance.svg);
 }
 

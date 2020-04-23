@@ -22,7 +22,9 @@
 			display: inline-block;
 			width: 24px;
 			height: 24px;
+			-webkit-mask-size: cover;
 			mask-size: cover;
+			-webkit-mask-repeat: no-repeat;
 			mask-repeat: no-repeat;
 			background-color: var(--color-white);
 
@@ -31,26 +33,32 @@
 			}
 
 			&.icon--github {
+				-webkit-mask-image: url(../images/contact/github.svg);
 				mask-image: url(../images/contact/github.svg);
 			}
 
 			&.icon--linkedin {
+				-webkit-mask-image: url(../images/contact/linkedin.svg);
 				mask-image: url(../images/contact/linkedin.svg);
 			}
 
 			&.icon--instagram {
+				-webkit-mask-image: url(../images/contact/instagram.svg);
 				mask-image: url(../images/contact/instagram.svg);
 			}
 
 			&.icon--email {
+				-webkit-mask-image: url(../images/contact/email.svg);
 				mask-image: url(../images/contact/email.svg);
 			}
 
 			&.icon--flickr {
+				-webkit-mask-image: url(../images/contact/flickr.svg);
 				mask-image: url(../images/contact/flickr.svg);
 			}
 
 			&.icon--behance {
+				-webkit-mask-image: url(../images/contact/behance.svg);
 				mask-image: url(../images/contact/behance.svg);
 			}
 		}

@@ -43,19 +43,14 @@
 }
 
 .galaxy__blackhole img {
-	width: 135px;
+	width: 13.5rem;
 	grid-area: galaxy__blackhole--logo;
 }
 
 .galaxy__blackhole h1 {
-	font-size: 65px;
+	font-size: 6.5rem;
 	margin: 0;
 	grid-area: galaxy__blackhole--logo;
-
-	background: -webkit-linear-gradient(white, #38495a);
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
 
 	display: flex;
 	flex-direction: column;

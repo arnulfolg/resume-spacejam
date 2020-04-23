@@ -126,14 +126,7 @@ a {
 	font-weight: 400;
 	font-style: normal;
 	letter-spacing: 0;
-}
-a:visited,
-a:active {
-	color: var(--color-link);
-}
-a:hover,
-a:focus {
-	color: var(--color-links-hover);
+	color: var(--color-white);
 }
 
 @media all and (max-width: 900px) {
@@ -207,4 +200,13 @@ a:focus {
 		font-style: normal;
 		letter-spacing: 0;
 	}
+}
+
+a:visited,
+a:active {
+	color: var(--color-link);
+}
+a:hover,
+a:focus {
+	color: var(--color-links-hover);
 }
