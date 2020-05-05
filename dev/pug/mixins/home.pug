@@ -1,22 +1,23 @@
 doctype 
 html(lang="en")
 	head
+		title Arnulfo&apos;s CV
 		meta(charset='UTF-8')
 		meta(name='viewport' content='width=device-width, initial-scale=1.0')
 		meta(name="description", content="A modern resume inspired by the Space Jam's 90's Webpage")
 		meta(name="author" content="Arnulfo Loredo")
-		title Arnulfo&apos;s CV
+		meta(name="theme-color" content="#0e0e10")
 
 		link(rel='icon' href='images/favicon_128.png')
 		link(rel='stylesheet' href='css/reset.css')
 		link(rel='stylesheet' href='css/space.css')
-		script(src="a11y.js")
 
-	block body
-		body.stars__galaxy.stars__background.stars__background--stars--1.stars__background--stars--2
-			section.galaxy#galaxy(role="main" aria-labelledby="galaxy")
+block body
+	body.stars__galaxy.stars__background.stars__background--stars--1.stars__background--stars--2
+		section.galaxy#galaxy(role="main" aria-labelledby="galaxy")
 
-				block content
+			block content
 
-				footer.footer.galaxy__footer#section_footer(role="contentinfo")
-					include ../components/footer
+			footer.footer.galaxy__footer#section_footer(role="contentinfo")
+				include ../components/footer
+	//- script(src="a11y.js")

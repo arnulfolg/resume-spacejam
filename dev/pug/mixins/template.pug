@@ -1,13 +1,14 @@
 doctype 
 html(lang="en")
 	head
+		title 
+			block html_title
+			| &nbsp;- Arnulfo&apos;s CV
 		meta(charset='UTF-8')
 		meta(name='viewport' content='width=device-width, initial-scale=1.0')
 		meta(name="description", content="A modern resume inspired by the Space Jam's 90's Webpage")
 		meta(name="author" content="Arnulfo Loredo")
-		title 
-			block html_title
-			| &nbsp;- Arnulfo&apos;s CV
+		meta(name="theme-color" content="#0e0e10")
 
 		link(rel='icon' href='images/favicon_128.png')
 		link(rel='stylesheet' href='css/reset.css')
@@ -22,4 +23,4 @@ block body
 
 			footer.footer.planet__footer#section_footer(role="contentinfo")
 				include ../components/footer
-		script(src="a11y.js")
+		//- script(src="a11y.js")

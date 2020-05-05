@@ -7,7 +7,7 @@ gulp.task("sass", () => {
 		.src("dev/sass/**/*.scss")
 		.pipe(
 			sass({
-				outputStyle: "expanded",
+				outputStyle: "compressed",
 			}).on("error", sass.logError)
 		)
 		.pipe(gulp.dest("dist/css/"));
@@ -18,7 +18,7 @@ gulp.task("pug", () => {
 		.src("dev/pug/*.pug")
 		.pipe(
 			pug({
-				pretty: true,
+				pretty: false,
 			})
 		)
 		.pipe(gulp.dest("dist/"));
