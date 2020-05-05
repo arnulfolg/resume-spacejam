@@ -7,8 +7,8 @@ block header_title
 	| About
 
 block content
-	article.planet__content
-		section
+	article.planet__content#article
+		section(aria-labelledby="article")
 			p
 				| Visual Designer with a Front End and Engineer
 				| background. I moved from the coding side to the design
@@ -18,14 +18,14 @@ block content
 				| Arquitecture, UI Design and Front End. Also has an
 				| incredible passion for photography, reading, and taking
 				| longs walks or running.
-		section
+		section(aria-labelledby="article")
 			h3 Languages
-		section.featured__block
+		section.featured__block(aria-labelledby="article")
 			img.featured__block--image(src='images/about/english-language.svg' alt='')
 			.featured__block--text
 				p English
 				p C1 - Advanced
-		section.featured__block
+		section.featured__block(aria-labelledby="article")
 			img.featured__block--image(src='images/about/spanish-language.svg' alt='')
 			.featured__block--text
 				p Spanish

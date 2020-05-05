@@ -7,15 +7,15 @@ block header_title
 	| Hobbies
 
 block content
-	article.planet__content
-		section.featured__block
+	article.planet__content#article
+		section.featured__block(aria-labelledby="article")
 			img.featured__block--image(src='images/hobbies/idea.svg' alt='')
 			.featured__block--text
 				p Learning new things
 				p Accessibility Enthusiast
-		section
+		section(aria-labelledby="article")
 			h3 Sports
-		section.skill__block.skill__block--hobbies
+		section.skill__block.skill__block--hobbies(aria-labelledby="article")
 			.skill__column--left
 				img(src='images/hobbies/running.svg' alt='').skill__block--image.skill__block--rightalign
 				.skill__block--name
@@ -36,9 +36,9 @@ block content
 				img(src='images/hobbies/ping-pong.svg' alt='').skill__block--image.skill__block--rightalign
 				.skill__block--name
 					p Ping Pong
-		section
+		section(aria-labelledby="article")
 			h3 Other Activities
-		section.skill__block.skill__block--hobbies
+		section.skill__block.skill__block--hobbies(aria-labelledby="article")
 			.skill__column--left
 				img(src='images/hobbies/photo-camera.svg' alt='').skill__block--image.skill__block--rightalign
 				.skill__block--name
