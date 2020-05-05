@@ -16,6 +16,10 @@
 
 			li {
 				margin: 0 1rem;
+
+				a:focus .icon {
+					background-color: var(--color-links-hover);
+				}
 			}
 		}
 		.icon {
