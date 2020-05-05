@@ -8,12 +8,13 @@ html(lang="en")
 		link(rel='icon' href='images/favicon_128.png')
 		link(rel='stylesheet' href='css/reset.css')
 		link(rel='stylesheet' href='css/space.css')
+		script(src="a11y.js")
 
 	block body
 		body.stars__galaxy.stars__background.stars__background--stars--1.stars__background--stars--2
-			section.galaxy(role="main")
+			section.galaxy#galaxy(role="main" aria-labelledby="galaxy")
 
 				block content
 
-				footer.footer.galaxy__footer
+				footer.footer.galaxy__footer#section_footer(role="contentinfo")
 					include ../components/footer

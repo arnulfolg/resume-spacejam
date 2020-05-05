@@ -1,22 +1,23 @@
 doctype 
 html(lang="en")
-head
-	meta(charset='UTF-8')
-	meta(name='viewport' content='width=device-width, initial-scale=1.0')
-	title 
-		block html_title
-		| &nbsp;- Arnulfo&apos;s CV
+	head
+		meta(charset='UTF-8')
+		meta(name='viewport' content='width=device-width, initial-scale=1.0')
+		title 
+			block html_title
+			| &nbsp;- Arnulfo&apos;s CV
 
-	link(rel='icon' href='images/favicon_128.png')
-	link(rel='stylesheet' href='css/reset.css')
-	link(rel='stylesheet' href='css/space.css')
+		link(rel='icon' href='images/favicon_128.png')
+		link(rel='stylesheet' href='css/reset.css')
+		link(rel='stylesheet' href='css/space.css')
+		script(src="a11y.js")
 
-block body
-	body.stars__planet.stars__background.stars__background--stars--3
-		section.planet
-			include ../components/header
+	block body
+		body.stars__planet.stars__background.stars__background--stars--3
+			section.planet#planet(aria-labelledby="planet")
+				include ../components/header
 
-			block content
+				block content
 
-			footer.footer.planet__footer
-				include ../components/footer
+				footer.footer.planet__footer#section_footer(role="contentinfo")
+					include ../components/footer

@@ -1,5 +1,5 @@
-header.planet__header
-	nav.header__navigation
+header.planet__header(role="banner")
+	nav.header__navigation(role="navigation" aria-label="Links")
 		ul
 			li
 				ul.header__navigation--home
@@ -33,6 +33,6 @@ header.planet__header
 						a.header__navigation--link--page(href='hobbies.html')
 							img(src='images/planet_hobbies.svg' alt='')
 							p Hobbies
-	section.header__title
-		h2 
+	section.header__title(aria-labelledby="page_title")
+		h2#page_title
 			block header_title
