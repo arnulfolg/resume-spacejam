@@ -201,12 +201,22 @@ a {
 		letter-spacing: 0;
 	}
 }
-
+a {
+	outline-color: transparent;
+	outline-style: dashed;
+	outline-width: medium;
+	outline-offset: 10px;
+}
 a:visited,
 a:active {
 	color: var(--color-link);
 }
-a:hover,
+a:hover {
+	color: var(--color-links-hover);
+	outline-offset: 2px;
+}
 a:focus {
 	color: var(--color-links-hover);
+	outline-color: currentColor;
+	outline-offset: 2px;
 }

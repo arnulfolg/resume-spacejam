@@ -1,18 +1,19 @@
-doctype html
-head
-	meta(charset='UTF-8')
-	meta(name='viewport' content='width=device-width, initial-scale=1.0')
-	title Arnulfo&apos;s CV
+doctype 
+html(lang="en")
+	head
+		meta(charset='UTF-8')
+		meta(name='viewport' content='width=device-width, initial-scale=1.0')
+		title Arnulfo&apos;s CV
 
-	link(rel='icon' href='images/favicon_128.png')
-	link(rel='stylesheet' href='css/reset.css')
-	link(rel='stylesheet' href='css/space.css')
+		link(rel='icon' href='images/favicon_128.png')
+		link(rel='stylesheet' href='css/reset.css')
+		link(rel='stylesheet' href='css/space.css')
 
-block body
-	body.stars__galaxy.stars__background.stars__background--stars--1.stars__background--stars--2
-		section.galaxy
+	block body
+		body.stars__galaxy.stars__background.stars__background--stars--1.stars__background--stars--2
+			section.galaxy(role="main")
 
-			block content
+				block content
 
-			footer.footer.galaxy__footer
-				include ../components/footer
+				footer.footer.galaxy__footer
+					include ../components/footer
