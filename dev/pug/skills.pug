@@ -7,12 +7,12 @@ block header_title
 	| Skills
 
 block content
-	article.planet__content
-		section.featured__block
+	article.planet__content#article
+		section.featured__block(aria-labelledby="article")
 			img.featured__block--image(src='images/skills/logo_ux.svg' alt='')
 			.featured__block--text
 				p User Experience
-		section.skill__block.skill__block--skills
+		section.skill__block.skill__block--skills(aria-labelledby="article")
 			.skill__column--left
 				.skill__block--name.skill__block--rightalign
 					p Usability Analysis
@@ -30,11 +30,11 @@ block content
 				.skill__block--name.skill__block--rightalign
 					p Interaction Design
 				.skill__block--range.skill__block--range--75.skill__block--range--ux
-		section.featured__block
+		section.featured__block(aria-labelledby="article")
 			img.featured__block--image(src='images/skills/logo_ui.svg' alt='')
 			.featured__block--text
 				p User Interface
-		section.skill__block.skill__block--skills
+		section.skill__block.skill__block--skills(aria-labelledby="article")
 			.skill__column--left
 				.skill__block--name.skill__block--rightalign
 					p Design Patterns
@@ -61,11 +61,11 @@ block content
 				.skill__block--name.skill__block--rightalign
 					p Accessibility
 				.skill__block--range.skill__block--range--50.skill__block--range--ui
-		section.featured__block
+		section.featured__block(aria-labelledby="article")
 			img.featured__block--image(src='images/skills/logo_fe.svg' alt='')
 			.featured__block--text
 				p Front End Developer
-		section.skill__block.skill__block--skills
+		section.skill__block.skill__block--skills(aria-labelledby="article")
 			.skill__column--left
 				.skill__block--name.skill__block--rightalign
 					p HTML 5

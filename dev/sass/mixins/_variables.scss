@@ -13,42 +13,49 @@
 
 @font-face {
 	font-family: "Meshroom";
-	src: url(../fonts/sabrina-font-collection/the-meshroom-43651/TheMeshroom-3zaXL.ttf);
+	src: url(../fonts/TheMeshroom/TheMeshroom-3zaXL.ttf);
+	font-display: swap;
 }
 
 @font-face {
 	font-family: "Merienda One";
 	src: url(../fonts/Merienda_One/MeriendaOne-Regular.ttf);
+	font-display: swap;
 }
 
 @font-face {
 	font-family: "Quicksand";
 	src: url(../fonts/Quicksand/static/Quicksand-Bold.ttf);
 	font-weight: 700;
+	font-display: swap;
 }
 
 @font-face {
 	font-family: "Quicksand";
 	src: url(../fonts/Quicksand/static/Quicksand-Light.ttf);
 	font-weight: 300;
+	font-display: swap;
 }
 
 @font-face {
 	font-family: "Quicksand";
 	src: url(../fonts/Quicksand/static/Quicksand-Medium.ttf);
 	font-weight: 500;
+	font-display: swap;
 }
 
 @font-face {
 	font-family: "Quicksand";
 	src: url(../fonts/Quicksand/static/Quicksand-Regular.ttf);
 	font-weight: 400;
+	font-display: swap;
 }
 
 @font-face {
 	font-family: "Quicksand";
 	src: url(../fonts/Quicksand/static/Quicksand-SemiBold.ttf);
 	font-weight: 600;
+	font-display: swap;
 }
 
 html,
@@ -201,12 +208,22 @@ a {
 		letter-spacing: 0;
 	}
 }
-
+a {
+	outline-color: transparent;
+	outline-style: dashed;
+	outline-width: medium;
+	outline-offset: 10px;
+}
 a:visited,
 a:active {
 	color: var(--color-link);
 }
-a:hover,
+a:hover {
+	color: var(--color-links-hover);
+	outline-offset: 2px;
+}
 a:focus {
 	color: var(--color-links-hover);
+	outline-color: currentColor;
+	outline-offset: 2px;
 }
