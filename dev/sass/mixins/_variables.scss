@@ -125,7 +125,8 @@ h6 {
 }
 
 p,
-a {
+a,
+li {
 	margin-bottom: 3rem;
 	font-family: "Quicksand";
 	font-size: 2rem;
@@ -134,6 +135,20 @@ a {
 	font-style: normal;
 	letter-spacing: 0;
 	color: var(--color-white);
+}
+article {
+	ul {
+		margin-left: 3rem;
+	}
+
+	li {
+		margin-bottom: 1rem;
+		list-style: disc;
+		list-style-position: inside;
+	}
+	li:last-child {
+		margin-bottom: 3rem;
+	}
 }
 
 @media all and (max-width: 900px) {
@@ -198,8 +213,9 @@ a {
 	}
 
 	p,
-	a {
-		margin-bottom: 3rem;
+	a,
+	li {
+		// margin-bottom: 3rem;
 		font-family: "Quicksand";
 		font-size: 1.8rem;
 		line-height: 3rem;
