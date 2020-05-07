@@ -1,0 +1,23 @@
+doctype 
+html(lang="en")
+	head
+		title 404 - Page not found - Arnulfo&apos;s CV
+		meta(charset='UTF-8')
+		meta(name='viewport' content='width=device-width, initial-scale=1.0')
+		meta(name="description", content="A modern resume inspired by the Space Jam's 90's Webpage")
+		meta(name="author" content="Arnulfo Loredo")
+		meta(name="theme-color" content="#0e0e10")
+
+		link(rel='icon' href='images/favicon_128.png')
+		link(rel='stylesheet' href='css/reset.css')
+		link(rel='stylesheet' href='css/blackhole.css')
+
+block body
+	body.stars__lost
+		section.lost#lost(role="main" aria-labelledby="lost")
+
+			block content
+
+			footer.footer.lost_footer#section_footer(role="contentinfo")
+				include ../components/footer
+	//- script(src="a11y.js")
