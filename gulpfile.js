@@ -10,7 +10,7 @@ gulp.task("sass", () => {
 				outputStyle: "compressed",
 			}).on("error", sass.logError)
 		)
-		.pipe(gulp.dest("dist/css/"));
+		.pipe(gulp.dest("docs/css/"));
 });
 
 gulp.task("pug", () => {
@@ -21,7 +21,7 @@ gulp.task("pug", () => {
 				pretty: false,
 			})
 		)
-		.pipe(gulp.dest("dist/"));
+		.pipe(gulp.dest("docs/"));
 });
 
 gulp.task("default", () => {
